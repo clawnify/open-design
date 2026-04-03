@@ -399,6 +399,6 @@ app.get("/api/uploads/:filename", async (c) => {
 
 // ── OpenAPI doc ─────────────────────────────────────────────────────
 
-app.doc("/openapi.json", { openapi: "3.0.0", info: { title: "Canva App API", version: "1.0.0" } });
+app.doc("/openapi.json", { openapi: "3.0.0", info: { title: "Design App API", version: "1.0.0" } });
 
 export default app;

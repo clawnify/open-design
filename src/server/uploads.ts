@@ -44,3 +44,12 @@ export async function deleteUpload(filename: string): Promise<void> {
   const filePath = join(UPLOADS_DIR, safe);
   if (existsSync(filePath)) unlinkSync(filePath);
 }
+
+export async function readUploadAsBase64DataUrl(filename: string): Promise<string | null> {
+  const safe = sanitize(filename);
+  const filePath = join(UPLOADS_DIR, safe);
+  if (!existsSync(filePath)) return null;
+  const buf = readFileSync(filePath);
+  const contentType = mime(safe);
+  return `data:${contentType};base64,${buf.toString("base64")}`;
+}

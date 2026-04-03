@@ -1,6 +1,6 @@
 {
-  "name": "Canva App",
-  "description": "Design editor for creating professional social media graphics",
+  "name": "Design App",
+  "description": "Design editor for creating professional social media graphics, LinkedIn posts, and visual content with a canvas-based UI, templates, multi-page support, image uploads, and text/shape tools. Like Canva. Best for graphic design tools, social media post creators, banner makers, or any visual content editor.",
   "framework": "preact+hono",
   "files": [
     "src/server/index.ts",
@@ -11,11 +11,25 @@
     "src/client/main.tsx",
     "src/client/api.ts",
     "src/client/types.ts",
+    "src/client/context.tsx",
     "src/client/styles.css",
+    "src/client/hooks/use-canvas.ts",
+    "src/client/hooks/use-designs.ts",
+    "src/client/hooks/use-router.ts",
+    "src/client/components/canvas-area.tsx",
+    "src/client/components/design-list.tsx",
+    "src/client/components/editor.tsx",
+    "src/client/components/home.tsx",
+    "src/client/components/left-sidebar.tsx",
+    "src/client/components/page-canvas.tsx",
+    "src/client/components/pages-bar.tsx",
+    "src/client/components/right-sidebar.tsx",
+    "src/client/components/template-card.tsx",
+    "src/client/components/toolbar.tsx",
     "package.json",
     "vite.config.ts",
     "tsconfig.json",
     "index.html"
   ],
-  "r2": false
+  "r2": true
 }
