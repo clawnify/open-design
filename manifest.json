@@ -1,0 +1,21 @@
+{
+  "name": "Canva App",
+  "description": "Design editor for creating professional social media graphics",
+  "framework": "preact+hono",
+  "files": [
+    "src/server/index.ts",
+    "src/server/db.ts",
+    "src/server/uploads.ts",
+    "src/server/schema.sql",
+    "src/client/app.tsx",
+    "src/client/main.tsx",
+    "src/client/api.ts",
+    "src/client/types.ts",
+    "src/client/styles.css",
+    "package.json",
+    "vite.config.ts",
+    "tsconfig.json",
+    "index.html"
+  ],
+  "r2": false
+}

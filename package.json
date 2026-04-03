@@ -1,0 +1,48 @@
+{
+  "name": "@openclaw/canva-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n vite,api -c cyan,green \"vite\" \"tsx watch src/server/dev.ts\"",
+    "dev:api": "tsx watch src/server/dev.ts",
+    "dev:client": "vite",
+    "build": "vite build",
+    "preview": "vite build && NODE_ENV=production tsx src/server/dev.ts",
+    "start": "NODE_ENV=production tsx src/server/dev.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "@hono/zod-openapi": "^0.18.0",
+    "@tailwindcss/vite": "^4.2.2",
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "^17.3.1",
+    "fabric": "^6.0.0",
+    "hono": "^4.6.0",
+    "lucide-preact": "^0.575.0",
+    "preact": "^10.25.0",
+    "tailwindcss": "^4.2.2",
+    "webfontloader": "^1.6.28",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.0",
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/webfontloader": "^1.6.38",
+    "concurrently": "^9.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "canvas",
+      "esbuild"
+    ],
+    "overrides": {
+      "react": "npm:@preact/compat@^10.25.0",
+      "react-dom": "npm:@preact/compat@^10.25.0"
+    }
+  }
+}
