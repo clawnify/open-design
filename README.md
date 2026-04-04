@@ -30,8 +30,8 @@ Unlike Canva or Adobe Express, this runs entirely on your own infrastructure. No
 ## Quickstart
 
 ```bash
-git clone https://github.com/clawnify/design-app.git
-cd design-app
+git clone https://github.com/clawnify/open-design.git
+cd open-design
 pnpm install
 pnpm run dev
 ```
