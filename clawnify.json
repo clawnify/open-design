@@ -1,0 +1,41 @@
+{
+  "$schema": "https://app.clawnify.com/schema/v1/clawnify.json",
+  "version": 1,
+  "name": "Design App",
+  "description": "Design editor for creating professional social media graphics, LinkedIn posts, and visual content with a canvas-based UI, templates, multi-page support, image uploads, and text/shape tools. Like Canva. Best for graphic design tools, social media post creators, banner makers, or any visual content editor.",
+  "icon": "icon.svg",
+  "screenshot": "https://github.com/user-attachments/assets/55fcc0aa-4606-4f80-b56a-7734d7673914",
+  "tags": ["design", "graphics", "social-media", "canvas"],
+
+  "app": {
+    "framework": "preact+hono",
+    "database": true,
+    "storage": true
+  },
+
+  "deploy": {
+    "title": "Deploy your Design Editor",
+    "subtitle": "Like Canva — your own branded design tool in minutes",
+    "prompts": [
+      {
+        "key": "brand_name",
+        "label": "Brand or company name",
+        "placeholder": "e.g. DesignFlow Studio",
+        "required": true
+      },
+      {
+        "key": "use_case",
+        "label": "What will you design?",
+        "placeholder": "e.g. Social media posts for our marketing agency"
+      },
+      {
+        "key": "details",
+        "label": "Any other details?",
+        "type": "textarea",
+        "placeholder": "Brand colors, template types you need, custom fonts..."
+      }
+    ]
+  },
+
+  "agent": "agent.md"
+}
