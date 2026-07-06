@@ -1,3 +1,5 @@
+<img src="readme-banner.png" alt="Open Design preview" width="100%" />
+
 # OpenClaw Design App: The Open-Source Canva Alternative for SaaS
 
 A design editor for creating professional social media graphics — LinkedIn posts, quote cards, announcements, and more. Part of the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. Zero cloud dependencies — runs locally with SQLite.
@@ -9,8 +11,6 @@ Built with **Preact + Fabric.js + Tailwind CSS + Hono + SQLite**. Ships with a F
 OpenClaw Design App is a production-ready graphic design editor designed for the OpenClaw community. Think of it as an open-source Canva alternative — a visual design tool you can self-host, customize, and embed in any SaaS product.
 
 Unlike Canva or Adobe Express, this runs entirely on your own infrastructure. No subscriptions, no watermarks, no vendor lock-in. Create pixel-perfect social media graphics with professional typography and export at 2x resolution.
-
-<img width="1726" height="991" alt="Image" src="https://github.com/user-attachments/assets/55fcc0aa-4606-4f80-b56a-7734d7673914" />
 
 ## Features
 
