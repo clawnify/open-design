@@ -1,15 +1,10 @@
-import { OpenAPIHono, createRoute, z } from "@hono/zod-openapi";
-import { initDB, query, get, run } from "./db.js";
+import { createApp, createRoute, z } from "@clawnify/app";
+import { query, get, run } from "./db.js";
 import { putUpload, getUpload } from "./uploads.js";
 
 type Env = { Bindings: { DB: D1Database } };
 
-const app = new OpenAPIHono<Env>();
-
-app.use("*", async (c, next) => {
-  initDB(c.env);
-  await next();
-});
+const app = createApp<Env>({ title: "Design App API", version: "1.0.0" });
 
 // ── Schemas ──────────────────────────────────────────────────────────
 
@@ -382,9 +377,5 @@ app.get("/api/uploads/:filename", async (c) => {
     headers: { "Content-Type": result.contentType, "Cache-Control": "public, max-age=31536000" },
   });
 });
-
-// ── OpenAPI doc ─────────────────────────────────────────────────────
-
-app.doc("/openapi.json", { openapi: "3.0.0", info: { title: "Design App API", version: "1.0.0" } });
 
 export default app;
