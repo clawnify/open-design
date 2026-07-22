@@ -8,7 +8,8 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@clawnify/db": "^0.2.0",
+    "@clawnify/app": "^0.1.0",
+    "@clawnify/db": "^0.4.1",
     "@hono/zod-openapi": "^0.18.0",
     "@tailwindcss/vite": "^4.2.2",
     "fabric": "^6.0.0",
